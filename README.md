@@ -1,6 +1,6 @@
- Amazon Sales Report
+# Amazon Sales Report
 
- BY Million Dollar Coder 
+ # BY Million Dollar Coder 
  ************************************************************************
 
 Project Name :  Amazon Sales Report
@@ -15,7 +15,7 @@ Software Used : Power BI
 
 Date : 11 - 02 - 24
 
-API : **OpenAI**
+
 
 License : 
 
@@ -25,7 +25,7 @@ Please refer to the LICENSE file for more details.
 ( https://github.com/vasanth312203/AMAZON---power-BI/blob/b964b1393bccd13b8669d73727d4d9a84b69117a/LICENSE )
 
 
-Description :
+# Description :
 
 An Amazon Sales Report project using Power BI is a data visualization and business intelligence project that aims to analyze and present comprehensive insights into sales, revenue, profit, and various comparisons for Amazon sellers
 
@@ -50,32 +50,57 @@ The report uses various metrics such as date, product, transactions, transaction
 ```
 <img src="image3.jpg" alt="Not Found ">
 
-# POST Link :
+
+ # CHECK ICON:
 
 ```
 
-https://api.openai.com/v1/completions
+https://i.postimg.cc/RV3LcN3L/check-2.png
 
 ```
- # CREATE COMPLETOIN :
+ # SALES Query:
 
-**Creates a completion for the provided prompt and parameters.**
+```
+SalesOn = var selected = SELECTEDVALUE(Sale_Option[Type)
+var _url = "https://drive.google.com/uc?export=view&id=1mcmb1peVHoaU5XL2bYXinZtW9sv2bNG4"
+return IF(selected="1",_url)
+
+
+```
+ # UNITS Query:
+
+```
+SalesOn = var selected = SELECTEDVALUE(Sale_Option[Ty[e])
+var _url = "https://drive.google.com/uc?export=view&id=1mcmb1peVHoaU5XL2bYXinZtW9sv2bNG4"
+return IF(selected="2",_url)
+
+
+
+```
+ # SELLER Query:
+
+```
+Seller Count = CALCULATE([Sale_Units],ALL('amazon-fashion'[Category]))
+= var val = CALCULATE(COUNT('amazon-fashion'[seller_id]),CONTAINSSTRING(Amazon[Status],"Delivered"))
+return IF(val=BLANK(),"0",val)
+
 
 ```
 
-https://platform.openai.com/docs/api-reference/completions/create
+
+ # FILTER Query:
+
+```
+Filter Sale = var selecting = SELECTEDVALUE(Sale_Option[Type])
+var _units =SUM(Amazon[Qty])
+var _sale = SUM(Amazon[Total_Ammount])
+return IF(selecting="1",_sale,_units)
+
+
 
 ```
 
-Learning Outcomes:
 
-1 , Gain proficiency in HTML for structuring web content.
-
-2 , Develop CSS skills for enhancing visual aesthetics and responsiveness.
-
-3 , Harness the power of JavaScript for creating dynamic and interactive web applications.
-
-4 , Understand the basics of integrating external APIs for extended functionality.
 
 
 # Light Mode Images :
@@ -87,13 +112,56 @@ Learning Outcomes:
 
 
 
+# STEP BY STEP  PROCEDURE :
 
-How to Use
+1. Prepare Your Data:
 
-1 , Download or clone the repository to your local machine.
+   - Download the Amazon sales report in a compatible format such as CSV or Excel.
 
-2 , Open the chat.html file in a web browser.
+2. Open Power BI Desktop:
 
-3 , Download  the images folder in your project directory. This folder includes the user avatar and chatbot logo.
+   - If you haven't already, download and install Power BI Desktop from the Microsoft website and  Open Power BI Desktop
 
-4 , Ask any Question to Cupcake Chatbot ..
+3. Get Data:
+
+   - Click on the "Get Data" button on the Home tab and  import your Amazon sales data
+
+4. Load Data:
+
+   - Power BI will then display a preview of your data. Click "Load" to import it into Power BI.
+
+5. Transform Data (Optional):
+
+   - If your data needs cleaning or transformation, Click on "Transform Data" to open the Power Query Editor.
+   - Here you can perform tasks like renaming columns, removing duplicates, changing data types, etc.
+
+6. Create Visualizations:
+
+   - Once your data is loaded, go back to the main Power BI Desktop interface.
+   - Choose the type of visualization you want to create (e.g., bar chart, line chart, table) from the Visualization pane on the right.
+   - Drag and drop fields from your dataset onto the Values, Axis, or Legend areas of the visualization to define what data will be displayed.
+c
+7. Add Filters (Optional):
+
+   - You can add filters to your visualizations to focus on specific subsets of data.
+
+8. Create Calculated Columns or Measures (Optional):
+
+   - Click on the "Modeling" tab and then select "New Column" or "New Measure" to create your calculations.
+
+9. Design Your Dashboard:
+
+   - Once you have created your visualizations, arrange them on the report canvas to create a dashboard.
+
+10. Publish to Power BI Service (Optional):
+
+    - If you want to share your dashboard with others or access it from anywhere, you can publish it to the Power BI Service.
+    - Click on "File" > "Publish to Power BI" and follow the prompts to upload your report to the Power BI Service.
+
+
+
+# GITHUB 
+
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=vasanth312203&show_icons=true&theme=radical)
+
+![Github Trophy](https://github-profile-trophy.vercel.app/?username=vasanth312203&theme=discord)
