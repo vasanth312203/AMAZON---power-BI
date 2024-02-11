@@ -27,13 +27,28 @@ Please refer to the LICENSE file for more details.
 
 Description :
 
-# API KEY :
-**To get your API key, visit the following URL:**
-```
+An Amazon Sales Report project using Power BI is a data visualization and business intelligence project that aims to analyze and present comprehensive insights into sales, revenue, profit, and various comparisons for Amazon sellers
 
- https://platform.openai.com/account/api-keys
+Data Integration: 
+
+The collected data is integrated with Power BI, a business analytics tool developed by Microsoft1.
+
+Data Visualization:
+
+Power BI is used to create interactive reports, charts, and dashboards that provide valuable insights into sales, inventory, customer behavior, and more14. This can help sellers identify trends, optimize their operations, and make informed decisions about their Amazon business4.
+
+Metrics Used:
+
+The report uses various metrics such as date, product, transactions, transaction revenue, marketplace, item status, quantity, item price, last updated date, order status, fulfillment channel, sales channel, order channel, item promotion discount, ship city, ship state, ship postal code, ship country
+
+
+#  KEY URL's :
+**To download the Power BI , visit the following URL:**
+```
+ https://platform.openai.com/account/api-keys](https://www.microsoft.com/en-us/download/details.aspx?id=58494
 
 ```
+<img src="image3.jpg" alt="Not Found ">
 
 # POST Link :
 
